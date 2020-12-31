@@ -5,13 +5,21 @@ layout: default
 <div class="catalogue">
   {% for post in paginator.posts %}
     <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
+      <div class="catalogue-image">
+        <img src="https://picsum.photos/200/200">
+      </div>
       <div>
-        <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
         <h1 class="catalogue-title">{{ post.title }}</h1>
         <div class="catalogue-line"></div>
-
+        <div class="catalogue-info">
+          <img src="{{ "/assets/images/clock-blue.png" | relative_url }}" />
+          <time datetime="{{ post.date }}" class="catalogue-meta">{{ post.date | date: "%d. %B %Y" }}</time>
+          <span class="seperator">&nbsp;/&nbsp;</span>
+          <img src="{{ "/assets/images/tags-blue.png" | relative_url }}" />
+          <span class="catalogue-meta">{{ post.tags | sort | join: ", " }}</span>
+        </div>
         <p>
-          {{ post.content | strip_html | truncatewords: 30 }}
+          {{ post.content | strip_html | truncatewords: 40 }}
         </p>
 
       </div>

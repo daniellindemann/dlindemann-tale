@@ -1,7 +1,7 @@
 # Site settings
-title:          Tale
+title:          "// Daniel Lindemann"
 description:    "Minimal Jekyll theme for storytellers"
-baseurl:        "/tale"
+baseurl:        ""
 url:            "https://chesterhow.github.io"
 
 # Google Analytics
@@ -31,7 +31,7 @@ plugins:
   # - jemoji #Uncomment this to allow emoji in your post
 
 # Permalinks
-permalink:      /:year-:month-:day/:title
+permalink:      /:title
 paginate:       5
 
 # Excludes
