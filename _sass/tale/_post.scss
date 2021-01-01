@@ -2,28 +2,45 @@
   padding: 3rem 0;
 
   &-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    img {
+      display: inline;
+      margin: 0;
+      max-width: initial;
+      padding-right: 4px;
+    }
+
+    .seperator {
+      color: $blue
+    }
+  }
+
+  .post-info img {
+    margin: 0;
+  }
+
+  &-meta {
     color: $default-tint;
     font-family: $serif-primary;
-    letter-spacing: 0.5px;
-    text-align: center;
-
-    span {
-      font-style: italic;
-    }
+    font-size: 16px;
+    letter-spacing: .5px;
   }
 
   &-title {
     color: $default-shade;
     font-family: $serif-primary;
-    font-size: 4rem;
+    font-size: 2.5rem;
     margin: 1rem 0;
-    text-align: center;
   }
 
   &-line {
     border-top: 0.4rem solid $default-shade;
     display: block;
-    margin: 0 auto 3rem;
+    margin: 0 0 1rem;
     width: 4rem;
   }
 
