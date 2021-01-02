@@ -8,8 +8,12 @@ permalink: /404.html
   <h1 class="notfound-error">404: Page not found</h1>
   <div class="notfound-line"></div>
   <p class="notfound-message">
+    {% if site.german404 %}
+    Hoppla! Die Seite nach der du suchst existiert nicht. <a href="{{ site.baseurl }}/">Zur&uuml;ck zur Startseite</a>.
+    {% else %}
     Oops! We can't seem to find the page you are looking for. Let's
     <a href="{{ site.baseurl }}/">head back home</a>.
+    {% endif %}
   </p>
   <p></p>
 </div>

@@ -40,10 +40,11 @@ exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
 # Disqus (Set to your disqus id)
 disqus: jekyll-tale
 
-# date
+# Language
 germandate: true
+german404: true
 
-# social links
+# Social Links
 social:
   twitter: daniellindemann
   github: daniellindemann
