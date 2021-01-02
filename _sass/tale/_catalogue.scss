@@ -66,3 +66,9 @@
     width: 2rem;
   }
 }
+
+@media (max-width: 600px) {
+  .catalogue-item .catalogue-image {
+    display: none;
+  }
+}
