@@ -15,7 +15,12 @@ layout: default
         <div class="catalogue-line"></div>
         <div class="catalogue-info">
           <img src="{{ "/assets/clock-blue.png" | relative_url }}" />
-          <time datetime="{{ post.date }}" class="catalogue-meta">{{ post.date | date: "%d. %B %Y" }}</time>
+          {% if site.germandate %}
+          {% include date-german.html date=post.date showDay=true %}
+          <time datetime="{{ post.date }}" class="catalogue-meta">{{ formattedDate }}</time>
+          {% else %}
+          <time datetime="{{ post.date }}" class="catalogue-meta">{{ post.date | date: "%B %d, %Y" }}</time>
+          {% endif %}
           <span class="seperator">&nbsp;/&nbsp;</span>
           <img src="{{ "/assets/tags-blue.png" | relative_url }}" />
           <span class="catalogue-meta">{{ post.tags | sort | join: ", " }}</span>

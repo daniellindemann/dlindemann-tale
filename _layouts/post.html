@@ -7,7 +7,12 @@ layout: default
   <div class="post-line"></div>
   <div class="post-info">
     <img src="{{ "/assets/clock-blue.png" | relative_url }}" />
-    <time datetime="{{ page.date }}" class="catalogue-meta">{{ page.date | date: "%d. %B %Y" }}</time>
+    {% if site.germandate %}
+    {% include date-german.html date=page.date showDay=true %}
+    <time datetime="{{ page.date }}" class="post-meta">{{ formattedDate }}</time>
+    {% else %}
+    <time datetime="{{ page.date }}" class="post-meta">{{ page.date | date: "%B %d, %Y" }}</time>
+    {% endif %}
     <span class="seperator">&nbsp;/&nbsp;</span>
     <img src="{{ "/assets/tags-blue.png" | relative_url }}" />
     <span class="post-meta">{{ page.tags | join: ", " }}</span>
