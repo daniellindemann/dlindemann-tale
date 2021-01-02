@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Case of the Missing Post"
-author: "Chester"
+author: "Daniel"
 tags: Tale
 img: the-case-of-the-missing-post.jpg
 ---

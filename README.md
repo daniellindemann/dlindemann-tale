@@ -34,4 +34,4 @@ disqus: jekyll-tale
 Next, add `comments: true` to the YAML front matter of the posts which you would like to enable comments for.
 
 ## License
-See [LICENSE](https://github.com/chesterhow/tale/blob/master/LICENSE)
+See [LICENSE](https://github.com/daniellindemann/dlindemann-tale/blob/master/LICENSE)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Mystery of the Filler Post"
-author: "Chester"
+author: "Daniel"
 tags: Tale
 img: the-mystery-of-the-filler-post.jpg
 ---
