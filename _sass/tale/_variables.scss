@@ -19,6 +19,9 @@ $monospaced: Menlo, Monaco, monospace !default;
 // Sizes
 $page-width: 1200px;
 
+// Font Awesome
+$fa-font-path: '/assets/webfonts';
+
 @mixin box-sizing($type: border-box) {
   -webkit-box-sizing: $type;
      -moz-box-sizing: $type;

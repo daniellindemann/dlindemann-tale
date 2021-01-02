@@ -3,10 +3,17 @@
     <a href="{{ site.baseurl }}/">
       <h2 class="nav-title">// {{ site.title }}</h2>
     </a>
-    <ul>
-      <li><a href="{{ site.baseurl }}/">Posts</a></li>
-      <li><a href="{{ '/tags' | prepend: site.baseurl }}">Tags</a></li>
-      <li><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
-    </ul>
+    <div class="nav-items">
+      <ul>
+        <li><a href="{{ site.baseurl }}/">Posts</a></li>
+        <li><a href="{{ '/tags' | prepend: site.baseurl }}">Tags</a></li>
+        <li><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
+      </ul>
+      <ul class="nav-socialmedia-items">
+        <li><a href="https://twitter.com/{{ site.social.twitter }}"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://github.com/{{ site.social.github }}"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/{{ site.social.linkedin }}"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </div>
   </div>
 </nav>

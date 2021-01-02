@@ -41,6 +41,12 @@ footer,
     margin: 1rem 0 0;
     padding: 0;
     text-align: center;
+
+    &.nav-socialmedia-items {
+      li {
+        padding-right: 0.5rem;
+      }
+    }
   }
 
   li {
@@ -72,10 +78,19 @@ footer,
       text-align: left;
     }
 
-    ul {
+    &-items {
       bottom: 0;
       position: absolute;
       right: 0;
+
+      ul {
+        display: inline;
+        margin-right: 2rem;
+      }
+
+      .nav-socialmedia-items {
+        margin-right: 0;
+      }
     }
   }
 }
@@ -84,6 +99,40 @@ footer {
   font-family: $serif-primary;
   padding: 2rem 0;
   text-align: center;
+
+  ul {
+    list-style-type: none;
+    margin: 1rem 0 0;
+    padding: 0;
+    text-align: center;
+
+    &.nav-socialmedia-items {
+      li {
+        padding-right: 0.5rem;
+      }
+    }
+
+    a {
+      color: $default-color;
+    }
+  }
+
+  li {
+    @include transition(all .2s ease-out);
+    color: $default-color;
+    display: inline-block;
+    opacity: .6;
+    padding: 0 2rem 0 0;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
 
   span {
     color: $default-color;
