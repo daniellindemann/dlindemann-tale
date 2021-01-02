@@ -5,6 +5,7 @@ layout: default
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <div class="post-line"></div>
+  {% if page.date %}
   <div class="post-info">
     <img src="{{ "/assets/clock-blue.png" | relative_url }}" />
     {% if site.germandate %}
@@ -17,6 +18,7 @@ layout: default
     <img src="{{ "/assets/tags-blue.png" | relative_url }}" />
     <span class="post-meta">{{ page.tags | join: ", " }}</span>
   </div>
+  {% endif %}
 
   {{ content }}
 </div>
