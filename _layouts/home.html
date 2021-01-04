@@ -7,7 +7,11 @@ layout: default
     <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
       {% if post.img %}
       <div class="catalogue-image">
+        {% if post.img_thumb %}
+        <img src="{{ '/assets/images/' | prepend: site.baseurl | append: post.img_thumb }}" title="{{ post.title }}" />
+        {% else %}
         <img src="{{ '/assets/images/' | prepend: site.baseurl | append: post.img }}" title="{{ post.title }}" />
+        {% endif %}
       </div>
       {% endif %}
       <div>
